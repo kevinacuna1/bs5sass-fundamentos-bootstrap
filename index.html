@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/app.css">
@@ -179,7 +180,7 @@
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Botones</h1>
-    
+        
         <button class="btn btn-primary mt-2">Botón Primario</button>
         <button class="btn btn-secondary mt-2">Botón Secundario</button>
         <button class="btn btn-success mt-2">Botón de Éxito</button>
@@ -191,6 +192,18 @@
         <button class="btn btn-link mt-2">Botón Enlace</button>
 
         <br>
+
+        <!-- Bootstrap Icons -->
+         <button class="btn btn-primary mt-2">Botón con Icono <i class="bi bi-person-fill-add"></i></button>
+
+         <!-- También en inputs. Utilizar button type="submit" -->
+         <button type="submit" class="btn btn-secondary mt-2">Input con Icono <i class="bi bi-alarm-fill"></i></button>
+
+         <a href="#" class="btn btn-success mt-2">Enlace con Icono <i class="bi bi-link-45deg"></i></a>
+
+         <button class="btn btn-danger mt-2">Botón con Icono <i class="bi bi-trash-fill"></i></button>
+
+         <br>
     
         <!-- Los enlaces y los inputs también pueden tener clases de botones -->
         <a href="#" class="btn btn-primary mt-2">Enlace Botón</a>
@@ -206,10 +219,11 @@
         <br>
 
         <!-- Tamaños de botones -->
-        <button class="btn btn-primary btn-sm mt-2">Botón Primario</button>
-        <button class="btn btn-secondary btn-md mt-2">Botón Secundario</button>
-        <button class="btn btn-success btn-lg mt-2">Botón de Éxito</button>
+        <button class="btn btn-primary btn-sm mt-2">Botón Primario SM</button>
+        <button class="btn btn-secondary btn-md mt-2">Botón Secundario MD</button>
+        <button class="btn btn-success btn-lg mt-2">Botón de Éxito LG</button>
         <button class="btn btn-dark mt-2" disabled>Botón Deshabilitado</button>
+
     </section>
 
     <section class="seccion">
