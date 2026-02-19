@@ -357,7 +357,22 @@
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Toasts</h1>
-
+    
+        <button class="btn btn-primary" id="toastBtn"><i class="bi bi-bell-fill"></i> Mostrar Toast</button>
+    
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+            <div id="toast" class="toast hide">
+                <div class="toast-header">
+                    <strong class="me-auto">Notificación</strong>
+                    <small>Hace un momento</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <p>Este es un toast de ejemplo.</p>
+                </div>
+            </div>
+        </div>
+    
     </section>
 
     <section class="seccion">
@@ -381,6 +396,16 @@
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('#toastBtn').onclick = e => {
+            e.preventDefault();
+
+            // Mostrar toast
+            const toastElement = document.querySelector('#toast');
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        }
+    </script>
 </body>
 
 </html>
